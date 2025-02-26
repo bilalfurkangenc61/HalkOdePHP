@@ -97,11 +97,11 @@
             $invoice_id = $_POST['invoice_id'];  // Fatura ID'si artık formdan alınmayacak, otomatik oluşturuldu
 
             $data = array(
-                "cc_holder_name" => "Test kart",
-                "cc_no" => "4155141122223339",
-                "expiry_month" => "12",
-                "expiry_year" => "2025",
-                "cvv" => "555",
+                "cc_holder_name" => $_POST['cc_holder_name'],
+                "cc_no" => $_POST['cc_no'],
+                "expiry_month" => $_POST['expiry_month'],
+                "expiry_year" => $_POST['expiry_year'],
+                "cvv" => $_POST['cvv'],
                 "currency_code" => $currencyCode,
                 "installments_number" => $installments,
                 "invoice_id" => $invoice_id,
